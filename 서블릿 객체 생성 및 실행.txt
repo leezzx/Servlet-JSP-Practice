@@ -1,0 +1,16 @@
+ROOT -> WEB-INF -> classes 생성 -> Nana.class 생성
+
+web.xml -> version="4.0"
+  	   metadata-complete="true"> 밑에
+
+	   <servlet>
+      	       <servlet-name>na</servlet-name>
+      	       <servlet-class>Nana</servlet-class>
+               </servlet>
+
+               <servlet-mapping>
+      	       <servlet-name>na</servlet-name>
+      	       <url-pattern>/hello</url-pattern>
+               </servlet-mapping> 입력
+
+톰캣 재시작 -> http://localhost:8080/hello

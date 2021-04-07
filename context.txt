@@ -1,0 +1,9 @@
+context : ROOT 밖에 있는 파일을 ROOT안에서 실행되는 것 처럼 하기
+	주로 팀 단위의 웹페이지를 만들 때 분리해서 제작 후 실행은 ROOT를 통해 가능하도록 함
+
+예시) ROOT 밖에 ITweb이라는 폴더 생성
+	-> apache-tomcat-9.0.44 -> conf -> server.xml (혹시 모르니 복사본 만들어서 실행)
+	-> <Host name="localhost" appBase="webapps" ... 밑에
+		<Context path="it" docBase="C:\Users\Leessx\apache-tomcat-9.0.44\webapps\ITWeb" privileged="true"/> 추가
+
+후 톰캣 재실행 -> localhost:8080/it/news.txt 가능
