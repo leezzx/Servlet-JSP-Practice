@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<div>
+			<form action="notice-reg" method="post"> <!-- method="post"를 통해 문서 요청 바디에 저장 : 쿼리스트링에 들어가지 않아 url이 단순해짐 -->
+				<div>
+					<label>제목:</label><input type="text" name="title">
+				</div>
+				<div>
+					<label>내용:</label>
+					<textarea name="content"></textarea> <!-- 여러값을 쓸때 사용하는 공간 -->
+				</div>
+				<div>
+					<input type="submit" value="등록" />
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
